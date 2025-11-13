@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ВАТРУШКА — всегда есть, что есть</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="nav">
+    <div class="brand">🟤 ВАТРУШКА</div>
+    <div>
+      <button id="themeToggle" class="ghost sm">🌙</button>
+      <button class="primary sm">Меню</button>
+    </div>
+  </nav>
+
+  <!-- Герой -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <h1>Булочки с любовью</h1>
+      <p>Свежая выпечка, уютная атмосфера и честный кофе — каждый день</p>
+      <a href="#menu" class="primary lg">Посмотреть меню</a>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <div class="highlights">
+    <div class="hl">
+      <span>🥐</span>
+      <h4>Свежая выпечка</h4>
+      <p>Выпекаем малыми партиями — всегда тёплое и хрустящее.</p>
+    </div>
+    <div class="hl">
+      <span>☕</span>
+      <h4>Кофе specialty</h4>
+      <p>Зёрна от локальных обжарщиков, баланс вкуса и аромата.</p>
+    </div>
+    <div class="hl">
+      <span>🚀</span>
+      <h4>Быстрый заказ</h4>
+      <p>Соберём и приготовим к вашему приходу.</p>
+    </div>
+  </div>
+
+  <!-- Меню -->
+  <section class="section" id="menu">
+    <div class="section__head">
+      <h2>Меню</h2>
+      <div class="filters">
+        <button class="chip active" data-filter="all">Все</button>
+        <button class="chip" data-filter="coffee">Кофе</button>
+        <button class="chip" data-filter="sweet">Сладкое</button>
+        <button class="chip" data-filter="food">Еда</button>
+        <input type="text" id="search" placeholder="Поиск по меню..." />
+      </div>
+    </div>
+
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <!-- Корзина -->
+  <section class="cart">
+    <div class="cart__head">
+      <h3>🧺 Корзина</h3>
+      <button class="ghost sm" id="clearCart">Очистить</button>
+    </div>
+    <ul class="cart__list" id="cartList"></ul>
+    <div class="cart__footer">
+      <div class="total">Итого: <strong id="total">0 ₸</strong></div>
+      <button class="primary" id="pay">Оплатить Kaspi</button>
+    </div>
+  </section>
+
+  <!-- О пекарне -->
+  <section class="section about">
+    <div class="about__img"></div>
+    <div class="about__text">
+      <h2>О пекарне</h2>
+      <p>
+        Мы верим в простые рецепты, качественные ингредиенты и тёплый сервис.
+        Ватрушка — это место, куда хочется возвращаться за настроением.
+      </p>
+      <ul>
+        <li>Французские техники теста</li>
+        <li>Натуральные ингредиенты</li>
+        <li>Сезонные спецпредложения</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 ВАТРУШКА — «всегда есть, что есть» 💛
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
